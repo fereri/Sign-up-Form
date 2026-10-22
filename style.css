@@ -9,6 +9,23 @@ body {
     flex-direction: row;
     padding: 0px;
     margin: 0px;
+    background-color: #F9FAFB;
+}
+
+.logo {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    padding: 10px;
+}
+
+.logo p {
+    font-family: "Norse Bold";
+    color: white;
+    font-size: 6rem;
+    margin: 0px;
 }
 
 .left-image {
@@ -17,4 +34,20 @@ body {
     width: 60vw;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+}
+
+.name,
+.contacts,
+.secure-info {
+    display: flex;
+    gap: 50px;
+}
+
+.enter-details {
+    background-color: #FFFFFF;
 }
