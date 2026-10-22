@@ -1,1 +1,20 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("fonts/Norsebold.otf") format("opentype");
+    unicode-range: U+0025-00FF;
+}
 
+body {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+}
+
+.left-image {
+    background-image: url("img/sign-up-form-bg.jpg");
+    height: 100vh;
+    width: 60vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
