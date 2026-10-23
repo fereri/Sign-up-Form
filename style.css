@@ -48,6 +48,10 @@ input:focus {
     box-shadow: 2px 2px 2px 2px #8996a3;
 }
 
+input:required {
+    outline: solid 1px red;
+}
+
 p {
     display: flex;
     flex-direction: column;
