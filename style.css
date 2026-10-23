@@ -4,12 +4,79 @@
     unicode-range: U+0025-00FF;
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Medium.ttf") format("truetype");
+    unicode-range: U+0025-00FF;
+}
+
+@font-face {
+    font-family: "Roboto-regular";
+    src: url("fonts/Roboto-Regular.ttf") format("truetype");
+    unicode-range: U+0025-00FF;
+}
+
+:root {
+    --space-left: 30px;
+    --space-top-bottom: 10px;
+    --top-margin: 50px;
+    --bottom-margin: 20px;
+}
+
 body {
     display: flex;
     flex-direction: row;
     padding: 0px;
     margin: 0px;
     background-color: #F9FAFB;
+    font-family: "Roboto-regular";
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-family: "Roboto";
+}
+
+input {
+    border: #E5E7EB 1px solid;
+    border-radius: 2px;
+}
+
+input:focus {
+    outline: solid 1px blue;
+    box-shadow: 2px 2px 2px 2px #8996a3;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: #8996a3;
+}
+
+button {
+    background-color: #596D48;
+    font-family: "Roboto";
+    font-size: 13px;
+    color: #FFFFFF;
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 10px 30px;
+}
+
+.bottom-section {
+    padding-left: var(--space-left);
+}
+
+.log-in {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .logo {
@@ -28,6 +95,10 @@ body {
     margin: 0px;
 }
 
+.long-text {
+    padding-right: 100px;
+}
+
 .left-image {
     background-image: url("img/sign-up-form-bg.jpg");
     height: 100vh;
@@ -36,9 +107,20 @@ body {
     background-repeat: no-repeat;
 }
 
-p {
-    display: flex;
-    flex-direction: column;
+.enter-details {
+    background-color: #FFFFFF;
+    padding-left: var(--space-left);
+    padding-top: var(--space-top-bottom);
+    padding-bottom: var(--space-top-bottom);
+    box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.3),  /* Top shadow */
+    0  8px 6px -6px rgba(0, 0, 0, 0.3);
+    margin-top: var(--top-margin);
+    margin-bottom: var(--bottom-margin);
+}
+
+.slogan,
+.long-text {
+    padding-left: var(--space-left);
 }
 
 .name,
@@ -46,8 +128,4 @@ p {
 .secure-info {
     display: flex;
     gap: 50px;
-}
-
-.enter-details {
-    background-color: #FFFFFF;
 }
